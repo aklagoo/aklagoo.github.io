@@ -17,6 +17,7 @@ html, body {
 	position: relative;
 }
 .main-page-content {
+	display: none;
 	position: absolute;
 	text-align: center;
 	color: #eee;
