@@ -9,21 +9,12 @@ html, body {
 	background: white;
 	font-size: 1.25rem;
 	font-family: 'Open Sans', sans-serif;
-}
-.main-page-background {
-	width: 100%;
-	height: 100%;
-	background-color: #222;
-	position: relative;
-}
-.main-page-content {
-	display: none;
-	position: absolute;
-	text-align: center;
-	color: #eee;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 span {
 	color: #FF7600;
@@ -36,17 +27,50 @@ button {
 	margin: 5%;
 	background: none;
 }
+img {
+	height: 1.5rem;
+	width: 1.5rem;
+	margin: 5%;
+	display: inline;
+}
+
+/*PAGE STYLES*/
+.page {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+}
+.page-content {
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/*MAIN PAGE*/
+.main-page-background {
+	background-color: #222;
+}
+.main-page-content {
+	color: #eee;
+	display: none;
+}
 .title {
 	margin: 2rem 0;
 }
 .links {
 	margin: 2rem 0;
 }
-img {
-	height: 1.5rem;
-	width: 1.5rem;
-	margin: 5%;
-	display: inline;
+
+/*PROJECT PAGE*/
+.project-page-background {
+	background-color: #eee;
+	display: none;
+}
+.project-page-content {
+	color: #444;
+	display: none;
 }
 /*<div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>*/
 /*<div>Icons made by <a href="https://www.flaticon.com/authors/dave-gandy" title="Dave Gandy">Dave Gandy</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>*/
