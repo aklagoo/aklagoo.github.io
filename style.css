@@ -1,77 +1,135 @@
-* {
-	margin: 0;
-	padding: 0;
+:root {
+    --color-white: #fafafa;
+    --color-black: #071e22;
+    --color-primary: #1d7874;
+    --color-primary-v2: #679289;
+    --color-secondary: #ee2e31;
+    --color-tertiary: #f4c095;
 }
-html, body {
-	padding: 0;
-	margin: 0;
-	height: 100%;
-	background: white;
-	font-size: 1.25rem;
-	font-family: 'Open Sans', sans-serif;
-	-webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+html {
+    font-family: futura-pt, sans-serif;
+    margin: 0;
+    padding: 0;
 }
-span {
-	color: #FF7600;
-}
-button {
-	color: #eee;
-	border-radius: 5px;
-	border: solid 2px #FF360D;
-	padding: 1em 2em;
-	margin: 5%;
-	background: none;
-}
-img {
-	height: 1.5rem;
-	width: 1.5rem;
-	margin: 5%;
-	display: inline;
+body, * {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
 }
 
-/*PAGE STYLES*/
-.page {
-	width: 100%;
-	height: 100%;
-	position: fixed;
+
+/*Font styles*/
+.font-cap {
+    text-transform: uppercase;
+    letter-spacing: 1.25px;
+    font-size: 14px;
+    font-weight: 600;   
 }
-.page-content {
-	position: absolute;
-	text-align: center;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+.font-sub1 {
+    text-transform: uppercase;
+    letter-spacing: 1.25px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.font-h2 {
+    font-size: 60px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+}
+.font-h6 {
+    font-size: 20px;
+    letter-spacing: 0.15px;
+}
+.font-p {
+    font-size: 16px;
+    letter-spacing: 0.5px;
 }
 
-/*MAIN PAGE*/
-.main-page-background {
-	background-color: #222;
+
+/* Navigation bar */
+nav {
+    position: absolute;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding: 32px 48px;
+    display: flex;
+    justify-content: space-between;
 }
-.main-page-content {
-	color: #eee;
-	display: none;
+.logo {
+    width: 32px;
+    color: var(--color-black);
 }
-.title {
-	margin: 2rem 0;
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    color: var(--color-black);
 }
-.links {
-	margin: 2rem 0;
+.nav-links > a {
+    margin: 0 8px;
+    opacity: 30%;
+    color: var(--color-black);
+    text-decoration: none;
+}
+.nav-links > a.nav-links-active {
+    opacity: 70%;
 }
 
-/*PROJECT PAGE*/
-.project-page-background {
-	background-color: #eee;
-	display: none;
+/* Main About */
+.main-about {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-white);
 }
-.project-page-content {
-	color: #444;
-	display: none;
+.main-about-title {
+    color: var(--color-black);
+    margin-bottom: 20px;
 }
-/*<div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>*/
-/*<div>Icons made by <a href="https://www.flaticon.com/authors/dave-gandy" title="Dave Gandy">Dave Gandy</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>*/
-/*<div>Icons made by <a href="https://www.flaticon.com/authors/iconnice" title="Iconnice">Iconnice</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>*/
+.main-about-school {
+    color: var(--color-secondary);
+}
+.main-about-desc {
+    width: 435px;
+    text-align: center;
+}
+.main-about-links {
+    margin: 8px;
+    color: var(--color-primary-v2);
+}
+.main-about-links > a {
+    color: var(--color-primary-v2);
+}
+
+
+/* Main Projects */
+.main-projects {
+    background-color: var(--color-black);
+    padding: 120px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--color-white);
+}
+.main-projects > * {
+    width: 880px;
+}
+.main-projects-title {
+    margin-bottom: 40px;
+}
+.main-projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.main-projects-desc {
+    width: 400px;
+    margin-bottom: 28px;
+}
+.main-projects-desc-title {
+    margin-bottom: 12px;
+}
